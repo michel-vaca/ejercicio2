@@ -52,10 +52,6 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-    /*public void clic2(View view) {
-        Intent intent   = new Intent(this,MainActivity.class);
-        startActivity(intent);
-    }*/
 
     public boolean validacion(){
         if(etNombre.getText().toString().equals(""))
@@ -74,5 +70,13 @@ public class MainActivity2 extends AppCompatActivity {
         }
 
         return true;
+    }
+
+
+    public void clic2(View view) {
+     /*   Intent intent   = new Intent(this,MainActivity.class);
+        startActivity(intent);
+        Bundle bundle = new Bundle();
+        intent.putExtras(bundle);*/
     }
 }
