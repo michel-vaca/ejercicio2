@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.ejercicio2.model.Jugador;
 
@@ -33,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
 
        Adaptador adaptador = new Adaptador(this, datos );
        lv.setAdapter(adaptador);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
+         Jugador    jugador=(Jugador) adapterView.getAdapter().getItem(i);
+                Toast.makeText(MainActivity.this,getResources().getString(R.string.stMensajeID) + jugador.getId(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
     }
 

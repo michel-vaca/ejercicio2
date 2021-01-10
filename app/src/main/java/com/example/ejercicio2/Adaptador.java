@@ -53,11 +53,11 @@ public class Adaptador extends BaseAdapter {
         tvNumPlayera.setText(datos.get(i).getNumPlayera());
 
 
-        /*switch (datos.get(i).getEquipo()){
+       switch (datos.get(i).getEquipo()){
             case "Club America (el mas grande)":
                 ivImagen.setImageResource(R.drawable.clubamerica);
                 break;
-            case "Atlas F. C.":
+            /*case "Atlas F. C.":
                 ivImagen.setImageResource(R.drawable.atlas);
                 break;
             case"C. D. Cruz Azul":
@@ -107,11 +107,11 @@ public class Adaptador extends BaseAdapter {
                 break;
             case"Universidad Nacional":
                 ivImagen.setImageResource(R.drawable.pumas);
-                break;
+                break;*/
             default:
                 break;
 
-        }*/
+        }
 
 
 

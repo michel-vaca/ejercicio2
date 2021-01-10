@@ -26,5 +26,6 @@
     <string name="stErrorNumPlayera">Se require que ingreses un numero de playera</string>
     <string name="stErrorEquipo">Se requiere que ingreeses el equipo del jugador</string>
     <string name="stVerLista">Ver lista</string>
+    <string name="stMensajeID">"se elegió el jugador con id: "</string>
 
 </resources>
