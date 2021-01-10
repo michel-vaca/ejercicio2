@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ejercicio2</string>
+    <string name="stNombre">Nombre</string>
+    <string name="stNumPlayera">Numero de playera</string>
+    <string name="stEquipo">Equipo</string>
+    <string name="stGuardar">Guardar</string>
+    <string name="stAmerica">Club America (el mas grande)</string>
+    <string name="stAtlas">Atlas F. C.</string>
+    <string name="stCruzAzul">C. D. Cruz Azul</string>
+    <string name="stChivas">C. D. Guadalajara</string>
+    <string name="stLeon">Club Leon</string>
+    <string name="stJuarez">F. C. Juarez</string>
+    <string name="stMazatlan">Mazatlan F. C.</string>
+    <string name="stMonterrey">C. F. Monterrey</string>
+    <string name="stNecaxa">Club Necaxa</string>
+    <string name="stPachuca">C. F. Pachuca</string>
+    <string name="stPuebla">C. F. Puebla</string>
+    <string name="stQueretaro">Queretaro F. C.</string>
+    <string name="stSanLuis">Atletico San Luis</string>
+    <string name="stSantos">Santos Laguna</string>
+    <string name="stTigres">Tigres de la UANL</string>
+    <string name="stTijuana">Club Tijuana</string>
+    <string name="stToluca">Deportivo Toluca F. C.</string>
+    <string name="stPumas">Universidad Nacional</string>
+    <string name="stErrorNombre">Se rquiere que ingrese el nombre del jugador</string>
+    <string name="stErrorNumPlayera">Se require que ingreses un numero de playera</string>
+    <string name="stErrorEquipo">Se requiere que ingreeses el equipo del jugador</string>
+    <string name="stVerLista">Ver lista</string>
+
+</resources>
