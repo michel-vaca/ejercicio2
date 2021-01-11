@@ -62,7 +62,7 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent   = new Intent(this,MainActivity.class);
 
         Adaptador adaptador = new Adaptador(this, datos );
-        Bundle bundle = new Bundle();
+        Bundle bundle= new Bundle();
         bundle.putSerializable("adaptador", adaptador );
         intent.putExtras(bundle);
         startActivity(intent);
