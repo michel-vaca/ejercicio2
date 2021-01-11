@@ -12,10 +12,14 @@ import android.widget.Toast;
 
 import com.example.ejercicio2.model.Jugador;
 
+import java.util.ArrayList;
+
 public class MainActivity2 extends AppCompatActivity {
     Jugador jugador;
     EditText etNombre,etNumPlayera;
     Spinner spnEquipo;
+    ArrayList<Jugador> datos= new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,16 +42,18 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void clic(View view) {
+        int i=0;
         if(validacion()){
-            jugador = new Jugador(1,etNombre.getText().toString(),etNumPlayera.getText().toString(),spnEquipo.getSelectedItem().toString());
-            Intent intent   = new Intent(this,MainActivity.class);
-            Bundle bundle = new Bundle();
-          bundle.putSerializable("jugador", jugador);
-           intent.putExtras(bundle);
-            startActivity(intent);
+            i=i+1;
+            jugador = new Jugador(i,etNombre.getText().toString(),etNumPlayera.getText().toString(),spnEquipo.getSelectedItem().toString());
+            datos.add(jugador);
 
 
         }
+            //startActivity(intent);
+
+
+
 
 
     }
@@ -74,9 +80,12 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void clic2(View view) {
-     /*   Intent intent   = new Intent(this,MainActivity.class);
-        startActivity(intent);
+       Intent intent   = new Intent(this,MainActivity.class);
+
+        Adaptador adaptador = new Adaptador(this, datos );
         Bundle bundle = new Bundle();
-        intent.putExtras(bundle);*/
+        bundle.putSerializable("adaptador", adaptador );
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

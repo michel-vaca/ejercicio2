@@ -12,9 +12,10 @@ import android.widget.TextView;
 import com.example.ejercicio2.model.Jugador;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Adaptador extends BaseAdapter {
+public class Adaptador extends BaseAdapter implements Serializable {
     Context contexto ;
     ArrayList<Jugador> datos;
     private static LayoutInflater inflater= null;
@@ -52,12 +53,12 @@ public class Adaptador extends BaseAdapter {
         tvEquipo.setText(datos.get(i).getEquipo());
         tvNumPlayera.setText(datos.get(i).getNumPlayera());
 
-
+/*
        switch (datos.get(i).getEquipo()){
             case "Club America (el mas grande)":
                 ivImagen.setImageResource(R.drawable.clubamerica);
                 break;
-            /*case "Atlas F. C.":
+            case "Atlas F. C.":
                 ivImagen.setImageResource(R.drawable.atlas);
                 break;
             case"C. D. Cruz Azul":
@@ -107,11 +108,11 @@ public class Adaptador extends BaseAdapter {
                 break;
             case"Universidad Nacional":
                 ivImagen.setImageResource(R.drawable.pumas);
-                break;*/
+                break;
             default:
                 break;
 
-        }
+        }*/
 
 
 
