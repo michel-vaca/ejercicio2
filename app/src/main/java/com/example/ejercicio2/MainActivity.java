@@ -86,4 +86,7 @@ public class MainActivity extends AppCompatActivity {
     public void clic(View view) {
 
     }
+
+    public void clic2(View view) {
+    }
 }

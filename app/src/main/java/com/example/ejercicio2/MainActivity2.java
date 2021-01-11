@@ -58,6 +58,15 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
+    public void clic2(View view) {
+        Intent intent   = new Intent(this,MainActivity.class);
+
+        Adaptador adaptador = new Adaptador(this, datos );
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("adaptador", adaptador );
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 
     public boolean validacion(){
         if(etNombre.getText().toString().equals(""))
@@ -79,13 +88,5 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
-    public void clic2(View view) {
-       Intent intent   = new Intent(this,MainActivity.class);
 
-        Adaptador adaptador = new Adaptador(this, datos );
-        Bundle bundle = new Bundle();
-        bundle.putSerializable("adaptador", adaptador );
-        intent.putExtras(bundle);
-        startActivity(intent);
-    }
 }
